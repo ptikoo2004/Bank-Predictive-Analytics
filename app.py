@@ -233,8 +233,7 @@ def create_prediction_chart(historical_df, predictions, target_col, title):
     ))
     
     # Predictions
-    last_year = int(historical_df['Year'].max())
-    future_years = [last_year + i for i in range(1, len(predictions) + 1)]
+    future_years = [f'202{6+i}-{7+i}' for i in range(len(predictions))]
     fig.add_trace(go.Scatter(
         x=future_years,
         y=predictions,
