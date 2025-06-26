@@ -232,7 +232,7 @@ def create_prediction_chart(historical_df, predictions, target_col, title):
         marker=dict(size=8)
     ))
     
-    # Predictions
+    # Predictions - using corrected year format
     future_years = [f'{2026+i}-{str(2027+i)[-2:]}' for i in range(len(predictions))]
     fig.add_trace(go.Scatter(
         x=future_years,
@@ -245,8 +245,8 @@ def create_prediction_chart(historical_df, predictions, target_col, title):
     
     fig.update_layout(
         title=dict(text=title, font=dict(size=16, color='#1f4e79')),
-        xaxis_title='Year',
-        yaxis_title='Amount',
+        xaxis_title='Fiscal Year',
+        yaxis_title='Amount (₹ Cr)',
         hovermode='x unified',
         showlegend=True,
         height=400,
