@@ -293,7 +293,7 @@ def main():
         
         # Predictions table
         st.subheader("📋 5-Year Deposits Forecast")
-        future_years = [f'202{6+i}-{7+i}' for i in range(5)]
+        future_years = [f'{2026+i}-{str(2027+i)[-2:]}' for i in range(5)]
         
         # Predict all deposit components
         deposits_predictions = {}
@@ -335,7 +335,7 @@ def main():
         
         # Predictions table
         st.subheader("📋 5-Year Advances Forecast")
-        future_years = [f'202{6+i}-{7+i}' for i in range(5)]
+        future_years = [f'{2026+i}-{str(2027+i)[-2:]}' for i in range(5)]
         
         advances_predictions = {}
         for col in ['Retail_Advances', 'Agriculture_Advances', 'MSME_Advances', 'Corporate_Advances', 'Total_Advances']:
@@ -429,7 +429,7 @@ def main():
         # Predict key ratios
         st.subheader("🔮 5-Year Ratios Forecast")
         
-        future_years = [f'202{6+i}-{7+i}' for i in range(5)]
+        future_years = [f'{2026+i}-{str(2027+i)[-2:]}' for i in range(5)]
         ratio_predictions = {}
         
         key_ratios = ['Return_on_Assets', 'Return_on_Networth', 'Net_Interest_Margin', 'Cost_to_Income_Ratio', 'CRAR']
