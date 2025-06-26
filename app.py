@@ -459,7 +459,7 @@ def main():
             st.info("This comprehensive forecast provides predictions for all key banking metrics for the next 5 years (2026-27 to 2030-31) based on historical trends and advanced machine learning models.")
             
             # Generate all predictions
-            future_years = [f'202{6+i}-{27+i}' for i in range(5)]
+            future_years = [f'{2026+i}-{str(2027+i)[-2:]}' for i in range(5)]
             
             # Deposits predictions
             deposits_predictions = {}
