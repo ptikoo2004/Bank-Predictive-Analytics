@@ -196,7 +196,7 @@ class BankPredictor:
             
             # Use the last few values and trends
             if len(last_values) >= 3:
-                recent_growth = np.mean(np.diff(last_values[-3:]) / last_values[-4:-1])
+                recent_growth = np.mean(np.diff(last_values[-3:]) / last_values[-3:][1:])
             else:
                 recent_growth = np.mean(np.diff(last_values) / last_values[:-1])
             
