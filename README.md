@@ -168,23 +168,6 @@ This dashboard is for educational and analytical purposes. The predictions are b
 4. Push to the branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## 👨‍💻 Author
-
-**Your Name**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- LinkedIn: [Your LinkedIn](https://linkedin.com/in/yourprofile)
-
-## 🙏 Acknowledgments
-
-- Streamlit team for the amazing framework
-- Plotly for interactive visualizations
-- Scikit-learn for machine learning capabilities
-- Banking industry for data insights
-
 ---
 
 ⭐ Star this repository if you found it helpful!
